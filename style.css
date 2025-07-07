@@ -1,0 +1,266 @@
+/* === style.css atualizado === */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff0f5;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #ff6f61;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+header .cta {
+  display: inline-block;
+  background-color: #ff4500;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+header .cta:hover,
+form button:hover {
+  background-color: #e03e00;
+}
+
+section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+h2 {
+  color: #d63384;
+  margin-bottom: 1.5rem;
+}
+
+.sobre p {
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  color: #d63384;
+  margin-top: 1rem;
+}
+
+.faq-item {
+  margin: 1rem auto;
+  max-width: 700px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 6px;
+}
+
+.faq-item:hover {
+  background-color: #ffe6f0;
+}
+
+.faq-question {
+  font-weight: bold;
+  color: #d63384;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  user-select: none;
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+form textarea {
+  min-height: 80px;
+}
+
+form button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.depoimentos .depoimento {
+  background-color: #fff;
+  margin: 1rem auto;
+  padding: 1rem 1.25rem;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  color: #444;
+}
+
+.depoimentos form {
+  margin-top: 2rem;
+  max-width: 700px;
+  width: 90%;
+}
+
+footer {
+  background-color: #ff69b4;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #25d366;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+#parcelas-box {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+
+.sobre-curso {
+  padding: 2rem 1rem 3rem;
+  text-align: center;
+}
+
+.sobre-curso h2 {
+  color: #d63384;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.curso-card {
+  background-color: #fff;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(214, 51, 132, 0.3);
+  color: #333;
+}
+
+.curso-card h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+  color: #d63384;
+}
+
+.curso-card p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.curso-card .valor {
+  font-size: 1.25rem;
+  color: #ff4500;
+  font-weight: bold;
+}
